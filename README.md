@@ -28,6 +28,7 @@ sports-voyager/
 └── .git/                   # Git version control directory
 
 
+
 Each HTML file uses semantic tags (`<header>`, `<main>`, `<section>`, `<article>`, `<nav>`, `<footer>`) to ensure clarity, accessibility, and grading alignment.
 
 ---
