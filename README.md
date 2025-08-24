@@ -20,16 +20,12 @@ The folder and file architecture is carefully scaffolded to support modular deve
 sports-voyager/ 
 
 ├── index.html              # Homepage with featured trips section
-
 ├── info.html               # Unified About + Contact page
-
 ├── trips.html              # Modular layout for featured cities
-
 ├── rome-derby.html         # Trip detail page: Rome Derby
-
-├── lisbon-weekend.html     # Trip detail page: Lisbon Weekend 
-├── style.css               # Global styles and responsive layout 
-├── hero-bg.jpg             # Editorial hero image for homepage 
+├── lisbon-weekend.html     # Trip detail page: Lisbon Weekend
+├── style.css               # Global styles and responsive layout
+├── hero-bg.jpg             # Editorial hero image for homepage
 └── .git/                   # Git version control directory
 
 
