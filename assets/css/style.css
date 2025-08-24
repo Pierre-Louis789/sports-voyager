@@ -1,0 +1,282 @@
+/* ===============================
+   ROOT VARIABLES
+================================= */
+:root {
+  --navy: #0b1f3a;
+  --coral: #ff5a5f;
+  --yellow: #ffd700;
+  --grey: #f4f4f4;
+  --white: #ffffff;
+
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Merriweather', serif;
+}
+
+/* ===============================
+   BASE RESET
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--grey);
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+/* ===============================
+   NAVIGATION – Desktop & Mobile
+================================= */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navy);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--yellow);
+  text-decoration: none;
+  font-family: var(--heading-font);
+  flex: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  gap: 3rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--yellow);
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--coral);
+}
+
+/* Mobile Toggle */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.nav-toggle-label span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+.hero {
+  background: linear-gradient(rgba(11, 31, 58, 0.7), rgba(11, 31, 58, 0.7)),
+              url('../images/hero-bg.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-content {
+  padding: 0 2rem;
+}
+
+.hero-content h2 {
+  font-family: var(--heading-font);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: var(--coral);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--yellow);
+  color: var(--navy);
+}
+
+/* ===============================
+   FEATURED TRIPS
+================================= */
+.featured-trips {
+  background: linear-gradient(to bottom, var(--white), var(--grey));
+  padding: 4rem 2rem;
+}
+
+.featured-trips h2 {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--navy);
+}
+
+.featured-trips h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--coral);
+  margin: 1rem auto;
+}
+
+/* ===============================
+   TRIP CARDS
+================================= */
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.trip-card {
+  background-color: var(--grey);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.trip-card:hover {
+  transform: translateY(-5px);
+}
+
+.trip-card img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.4s ease;
+}
+
+.trip-card:hover img {
+  transform: scale(1.05);
+}
+
+.trip-card h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.trip-card h3 a {
+  text-decoration: none;
+  color: var(--coral);
+  font-weight: 700;
+  font-family: var(--heading-font);
+}
+
+.trip-card p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+footer {
+  background-color: var(--navy);
+  color: var(--yellow);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .trip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--navy);
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label + .nav-links {
+    display: flex;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+}
