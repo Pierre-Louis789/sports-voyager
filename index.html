@@ -6,39 +6,55 @@
   <meta name="description" content="SportsVoyager – Your ultimate guide to unforgettable football weekends across Europe." />
   <title>SportsVoyager</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>SportsVoyager</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  
+    <header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">SportsVoyager</a>
 
-  <main>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="trips.html">Trips</a></li>
+      <li><a href="info.html">Info</a></li>
+    </ul>
+  </nav>
+</header>
+
     <section class="hero">
-      <h2>Plan Your Ultimate Football Weekend</h2>
-      <p>Explore legendary matches, vibrant cities, and unforgettable fan experiences.</p>
+      <div class="hero-content">
+        <h2>Plan Your Ultimate Football Weekend</h2>
+        <p>Explore legendary matches, vibrant cities, and unforgettable fan experiences.</p>
+        <a href="trips.html" class="btn">Start Planning</a>
+      </div>
     </section>
 
+  <main>
     <section class="featured-trips">
       <h2>Featured Destinations</h2>
       <div class="trip-grid">
-        <article>
+        <article class="trip-card">
           <img src="assets/images/trips/lisbon.jpg" alt="Lisbon football weekend" />
           <h3><a href="trips/lisbon-weekend.html">Lisbon Weekend</a></h3>
+          <p>Tapas, terraces, and football at Estádio da Luz.</p>
         </article>
-        <article>
+        <article class="trip-card">
           <img src="assets/images/trips/liverpool.jpg" alt="Liverpool legends tour" />
-          <h3><a href="trips/liverpool-legends.html">Liverpool Legends</a></h3>
+          <h3><a href="trips/liverpool-legends.html">Liverpool Legends Tour</a></h3>
+          <p>Walk through the Shankly Gates and into history.</p>
         </article>
-        <article>
+        <article class="trip-card">
           <img src="assets/images/trips/rome.jpg" alt="Rome derby experience" />
           <h3><a href="trips/rome-derby.html">Rome Derby</a></h3>
+          <p>Experience the passion of Lazio vs Roma under the lights.</p>
         </article>
       </div>
     </section>
