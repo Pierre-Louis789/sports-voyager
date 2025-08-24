@@ -3,65 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SportsVoyager – Your ultimate guide to unforgettable football weekends across Europe." />
+  <meta name="description" content="SportsVoyager – A curated portfolio of Europe’s most iconic football weekends. Designed for fans who travel with style." />
   <title>SportsVoyager</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-    <header>
-  <nav class="navbar">
-    <a href="index.html" class="logo">SportsVoyager</a>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+  <!-- ===============================
+       NAVIGATION
+  ================================== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="logo">SportsVoyager</a>
 
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="trips.html">Trips</a></li>
-      <li><a href="info.html">Info</a></li>
-    </ul>
-  </nav>
-</header>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Plan Your Ultimate Football Weekend</h2>
-        <p>Explore legendary matches, vibrant cities, and unforgettable fan experiences.</p>
-        <a href="trips.html" class="btn">Start Planning</a>
-      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="trips.html">Destinations</a></li>
+        <li><a href="info.html">Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===============================
+       HERO SECTION
+  ================================== -->
+  <section class="hero" role="banner">
+    <div class="hero-content">
+      <h1 class="hero-title">Design Your Matchday Escape</h1>
+      <p class="hero-sub">A curated portfolio of Europe’s most iconic football weekends — crafted for fans who travel with style.</p>
+      <a href="trips.html" class="btn">Explore Destinations</a>
+    </div>
     </section>
 
+  <!-- ===============================
+       FEATURED DESTINATIONS
+  ================================== -->
   <main>
-    <section class="featured-trips">
-      <h2>Featured Destinations</h2>
+    <section class="featured-trips" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Destinations</h2>
       <div class="trip-grid">
+
         <article class="trip-card">
           <img src="assets/images/trips/lisbon.jpg" alt="Lisbon football weekend" />
-          <h3><a href="trips/lisbon-weekend.html">Lisbon Weekend</a></h3>
-          <p>Tapas, terraces, and football at Estádio da Luz.</p>
+          <div class="trip-overlay">
+            <h3><a href="trips/lisbon-weekend.html">Lisbon Weekend</a></h3>
+            <p>Tapas, terraces, and football at Estádio da Luz.</p>
+          </div>
         </article>
+
         <article class="trip-card">
           <img src="assets/images/trips/liverpool.jpg" alt="Liverpool legends tour" />
-          <h3><a href="trips/liverpool-legends.html">Liverpool Legends Tour</a></h3>
-          <p>Walk through the Shankly Gates and into history.</p>
+          <div class="trip-overlay">
+            <h3><a href="trips/liverpool-legends.html">Liverpool Legends Tour</a></h3>
+            <p>Relive Anfield’s legacy and walk where legends were made.</p>
+          </div>
         </article>
+
         <article class="trip-card">
           <img src="assets/images/trips/rome.jpg" alt="Rome derby experience" />
-          <h3><a href="trips/rome-derby.html">Rome Derby</a></h3>
-          <p>Experience the passion of Lazio vs Roma under the lights.</p>
+          <div class="trip-overlay">
+            <h3><a href="trips/rome-derby.html">Rome Derby</a></h3>
+            <p>Witness Lazio vs Roma ignite the Eternal City under the lights.</p>
+          </div>
         </article>
+
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 SportsVoyager. All rights reserved.</p>
+  <!-- ===============================
+       FOOTER
+  ================================== -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 <strong>SportsVoyager</strong> — Designed for fans, built for impact.</p>
   </footer>
+
 </body>
 </html>
