@@ -28,12 +28,6 @@ sports-voyager/
 └── .git/                   # Git version control directory
 
 
-
-Each HTML file uses semantic tags (`<header>`, `<main>`, `<section>`, `<article>`, `<nav>`, `<footer>`) to ensure clarity, accessibility, and grading alignment.
-
----
-
-
 Each HTML file uses semantic tags (`<header>`, `<main>`, `<section>`, `<article>`, `<nav>`, `<footer>`) to ensure accessibility, SEO optimization, and clean content hierarchy.
 
 ---
@@ -66,12 +60,14 @@ Each HTML file uses semantic tags (`<header>`, `<main>`, `<section>`, `<article>
 This site is designed to be deployed as a static project using GitHub Pages.
 
 ### To deploy:
-1. Push the project to a public GitHub repository
-2. Go to **Settings** → **Pages**
-3. Under **Source**, select the `main` branch and `/root` folder
+1. Push the repository to GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under **Source**, select `main` branch and `/root`
 4. Save and wait for the site to publish
 
-Once deployed, the site will be accessible via a GitHub Pages URL.
+Your site will be live at:  
+`https://Pierre-Louis789.github.io/sports-voyager/`
+
 
 ---
 
@@ -93,7 +89,7 @@ These features will be added iteratively as the project evolves into a full-feat
 ## 📬 Contact
 
 For collaboration, feedback, or commercial inquiries:  
-📧 sicot.pierrelouis@gmail.com *(placeholder)*  
+📧 sicot.pierrelouis@gmail.com 
 Or open an issue via [GitHub](https://github.com/Pierre-Louis789/sports-voyager)
 
 ---
