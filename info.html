@@ -3,54 +3,204 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Info | SportsVoyager</title>
+  <meta name="description" content="How SportsVoyager works — discover what's included, how to plan your trip, and answers to common questions." />
+  <title>Info – SportsVoyager</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="info-card" href="assets/css/info-card.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- ===============================
+       NAVIGATION
+  ================================== -->
   <header>
     <nav class="navbar">
-    <a href="index.html" class="logo">SportsVoyager</a>
+      <h1 class="logo">SPORTS<span class="logo-highlight">VOYAGER</span></h1>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="trips.html"class="active">Destinations</a></li>
-      <li><a href="info.html">Info</a></li>
-    </ul>
-  </nav>
+      <div class="nav-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Destinations</a></li>
+          <li><a href="info.html" class="active">Info</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
+  <!-- ===============================
+       HERO SECTION
+  ================================== -->
+  <section class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Plan Smarter. Travel Better.</h1>
+      <p class="hero-sub">Everything you need to know before booking your football weekend — curated for fans who travel with style.</p>
+    </div>
+  </section>
+
+  <!-- ===============================
+       MAIN CONTENT
+  ================================== -->
   <main>
-    <section id="about">
-      <h1>About SportsVoyager</h1>
-      <p>SportsVoyager is your fan-first travel guide to the world’s greatest sporting cities. Whether you're chasing football in Lisbon or cricket in London, we help you plan unforgettable matchday experiences.</p>
+
+    <!-- HOW IT WORKS -->
+    <section class="featured-trips gradient-panel" aria-labelledby="info-heading">
+      <h2 id="info-heading" class="heading-centered">How It Works</h2>
+      <div class="trip-grid">
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Choose Your Destination</h3>
+            <p>Browse our curated list of football weekends across Europe — each one handpicked for atmosphere, culture, and matchday magic.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Plan Your Experience</h3>
+            <p>Each trip page includes stadium info, local highlights, and travel tips. You decide how immersive you want your weekend to be.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Book & Go</h3>
+            <p>We guide you to trusted booking partners for tickets, hotels, and transport — so you can focus on the experience, not the logistics.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Enjoy the Journey</h3>
+            <p>From pre-match rituals to post-game celebrations, our guides help you connect with the local culture and make the most of your trip.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+    <!-- WHAT'S INCLUDED -->
+    <section class="featured-trips gradient-panel">
+      <h2 class="heading-centered">What's Included</h2>
+      <div class="trip-grid">
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Stadium Insights</h3>
+            <p>History, seating tips, and fan culture for each venue.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Local Highlights</h3>
+            <p>Food, nightlife, and neighborhoods worth exploring.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Travel Tips</h3>
+            <p>Airport access, public transport, and matchday logistics.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Booking Links</h3>
+            <p>Trusted partners for tickets, hotels, and more.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+    <!-- FAQS -->
+    <section class="featured-trips gradient-panel">
+      <h2 class="heading-centered">FAQs</h2>
+      <div class="trip-grid">
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Are tickets included?</h3>
+            <p>We don’t sell tickets directly, but we link to trusted partners and official club sources for safe booking.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Can I customize my trip?</h3>
+            <p>Absolutely. Our guides are flexible — you choose your pace, your priorities, and your level of immersion.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Is this for solo travelers?</h3>
+            <p>Yes. Whether you’re flying solo or with friends, our trips are designed to be welcoming, safe, and unforgettable.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>What if the match is sold out?</h3>
+            <p>We provide alternative suggestions and local experiences to ensure your weekend is still epic, even if tickets are scarce.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+    <!-- CONTACT FORM -->
+    <section class="featured-trips gradient-panel">
+      <h2 class="heading-centered">Get in Touch</h2>
+      <form class="contact-form" action="#" method="post" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
 
-        <button type="submit">Send</button>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream sports trip..." required></textarea>
+
+        <button type="submit">Send Message</button>
+        <div id="form-message" style="display:none; color: var(--yellow); font-weight: bold; margin-top: 1rem;">
+          ✅ Message sent! We'll get back to you soon.
+        </div>
       </form>
     </section>
+
+    <!-- VISUAL INSPIRATION -->
+    <section class="featured-trips gradient-panel">
+      <h2 class="heading-centered">Visual Inspiration</h2>
+      <div class="trip-grid">
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Stadium Tour</h3>
+            <p>Explore the legendary Old Trafford — home of Manchester United — in this immersive stadium tour.</p>
+            <a href="https://www.youtube.com/watch?v=KUo-jEwQNmg" class="btn" target="_blank" rel="noopener noreferrer">Watch Stadium Trailer</a>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="info-overlay">
+            <h3>Matchday Experience</h3>
+            <p>Experience the electric atmosphere of a Champions League night in Madrid with this fan-made video.</p>
+            <a href="https://www.youtube.com/watch?v=1k6mXnYk5rM" class="btn" target="_blank" rel="noopener noreferrer">Watch Matchday Video</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 SportsVoyager. All rights reserved.</p>
+  <!-- CTA BAR -->
+  <div class="cta-bar">
+    <p>Ready to book your ultimate football weekend?</p>
+    <a href="trips.html" class="btn">View Destinations</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 <strong>SportsVoyager</strong> — Designed for fans, built for impact.</p>
   </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+
 </body>
 </html>

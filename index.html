@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SportsVoyager – A curated portfolio of Europe’s most iconic football weekends. Designed for fans who travel with style." />
-  <title>SportsVoyager</title>
+  <meta name="description" content="SportsVoyager curates unforgettable football weekends across Europe’s most iconic Destination." />
+  <title>Home – SportsVoyager</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- ===============================
-       NAVIGATION
+       HEADER & NAVIGATION
   ================================== -->
   <header>
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <a href="index.html" class="logo">SportsVoyager</a>
+    <nav class="navbar">
+      <h1 class="logo">SPORTS<span class="logo-highlight">VOYAGER</span></h1>
 
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </label>
 
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="trips.html">Destinations</a></li>
-        <li><a href="info.html">Info</a></li>
-      </ul>
+      <div class="nav-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="trips.html">Destinations</a></li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -37,54 +37,92 @@
   ================================== -->
   <section class="hero" role="banner">
     <div class="hero-content">
-      <h1 class="hero-title">Design Your Matchday Escape</h1>
-      <p class="hero-sub">A curated portfolio of Europe’s most iconic football weekends — crafted for fans who travel with style.</p>
-      <a href="trips.html" class="btn">Explore Destinations</a>
+      <h1>Curated Football Weekends</h1>
+      <p>From derby days to stadium tours — discover your next matchday escape across Europe.</p>
+      <br>
+      <a href="trips.html" class="btn-primary">Explore Destinations</a>
     </div>
-    </section>
+  </section>
+
+  <!-- ================================
+       INTRODUCTION
+       ============================= -->
+       <section class="why-sportsvoyager gradient-panel">
+  <h2 class="heading-centered">Why SportsVoyager?</h2>
+  <div class="trip-grid">
+    <article class="info-card">
+      <div class="info-overlay">
+        <h3>Curated Experiences</h3>
+        <p>We handpick weekends that blend football, culture, and local flavor — no generic packages here.</p>
+      </div>
+    </article>
+    <article class="info-card">
+      <div class="info-overlay">
+        <h3>Fan-First Design</h3>
+        <p>Every layout, guide, and tip is built for fans — not travel agents. You’re in control of your weekend.</p>
+      </div>
+    </article>
+    <article class="info-card">
+      <div class="info-overlay">
+        <h3>Editorial Depth</h3>
+        <p>From stadium lore to street rituals, we go beyond logistics to help you feel the pulse of matchday.</p>
+      </div>
+    </article>
+  </div>
+</section>
 
   <!-- ===============================
        FEATURED DESTINATIONS
   ================================== -->
   <main>
-    <section class="featured-trips" aria-labelledby="featured-heading">
-      <h2 id="featured-heading">Destinations</h2>
+    <section class="featured-preview" aria-labelledby="featured-heading">
+      <h2 class="heading-centered">Featured Trips</h2>
       <div class="trip-grid">
 
         <article class="trip-card">
-          <img src="assets/images/trips/lisbon.jpg" alt="Lisbon football weekend" />
+          <img src="assets/images/trips/ajax.jpg" alt="Ajax Amsterdam at Johan Cruijff ArenA" />
           <div class="trip-overlay">
-            <h3><a href="trips/lisbon-weekend.html">Lisbon Weekend</a></h3>
-            <p>Tapas, terraces, and football at Estádio da Luz.</p>
+            <h3><a href="trips/ajax-weekend.html">Weekend in Amsterdam</a></h3>
+            <p>Total football, red-and-white legacy, and echoes of Cruyff. A weekend in Amsterdam means history, style, and a seat at the Johan Cruijff ArenA.</p>
           </div>
         </article>
 
         <article class="trip-card">
-          <img src="assets/images/trips/liverpool.jpg" alt="Liverpool legends tour" />
+            <img src="assets/images/trips/napoli.jpg" alt="Napoli Weekend by the Bay of Naples" />
+            <div class="trip-overlay">
+                <h3><a href="trips/napoli-weekend.html">Napoli Weekend</a></h3>
+                <p>Vesuvian skies, roaring curva chants, and streets steeped in Maradona’s myth. A Napoli weekend is fire, faith, and football — all wrapped in sea breeze and espresso grit.</p>
+            </div>
+        </article>
+
+        <article class="trip-card">
+          <img src="assets/images/trips/liverpool.jpg" alt="Liverpool Legends Tour at Anfield" />
           <div class="trip-overlay">
             <h3><a href="trips/liverpool-legends.html">Liverpool Legends Tour</a></h3>
-            <p>Relive Anfield’s legacy and walk where legends were made.</p>
-          </div>
-        </article>
-
-        <article class="trip-card">
-          <img src="assets/images/trips/rome.jpg" alt="Rome derby experience" />
-          <div class="trip-overlay">
-            <h3><a href="trips/rome-derby.html">Rome Derby</a></h3>
-            <p>Witness Lazio vs Roma ignite the Eternal City under the lights.</p>
+            <p>Walk through the Shankly Gates and into football folklore.
+                Anfield isn’t just a stadium — it’s a cathedral of memory, pride, and red devotion.</p>
           </div>
         </article>
 
       </div>
     </section>
+    <section class="cta-bar">
+  <p>Ready to plan your ultimate football weekend?</p>
+  <a href="trips.html" class="btn">Destinations</a>
+</section>
   </main>
 
   <!-- ===============================
        FOOTER
   ================================== -->
   <footer role="contentinfo">
-    <p>&copy; 2025 <strong>SportsVoyager</strong> — Designed for fans, built for impact.</p>
+    <p>&copy; 2025 <strong>SportsVoyager</strong>. Built for fans, by fans.</p>
   </footer>
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+</script>
 
 </body>
 </html>

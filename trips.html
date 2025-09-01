@@ -6,7 +6,7 @@
   <meta name="description" content="Explore all SportsVoyager football weekends — curated matchday escapes across Europe’s most iconic stadiums." />
   <title>Destinations – SportsVoyager</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,21 +14,21 @@
        HEADER & NAVIGATION
   ================================== -->
   <header>
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <a href="index.html" class="logo">SportsVoyager</a>
+    <nav class="navbar">
+      <h1 class="logo">SPORTS<span class="logo-highlight">VOYAGER</span></h1>
 
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </label>
 
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="trips.html" class="active">Destinations</a></li>
-        <li><a href="info.html">Info</a></li>
-      </ul>
+      <div class="nav-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html" class="active">Destinations</a></li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -46,44 +46,87 @@
        DESTINATIONS GRID
   ================================== -->
   <main>
-    <section class="featured-trips" aria-labelledby="destinations-heading">
-      <h2 id="destinations-heading">All Destinations</h2>
+    <section class="featured-trips" aria-labelledby="destinations-heading" role="region">
+      <h2 id="destinations-heading" class="heading-centered">All Destinations</h2>
       <div class="trip-grid">
 
         <article class="trip-card">
-          <img src="assets/images/trips/lisbon.jpg" alt="Lisbon football weekend at Estádio da Luz" />
-          <h3><a href="trips/lisbon-weekend.html">Lisbon Weekend</a></h3>
-          <p>Tapas, terraces, and football at Estádio da Luz.</p>
-        </article>
+          <img src="assets/images/trips/Dortmund.jpg" alt="Dortmund Bundesliga experience at Signal Iduna Park" />
+          <div class="trip-overlay">
+            <h3><a href="trips/dortmund-weekend.html" aria-label="Read more about Dortmund Weekend">Dortmund Weekend</a></h3>
+            <p>Stand beneath the Yellow Wall, where 80,000 voices rise in unison. Signal Iduna Park isn’t just a stadium—it’s a cathedral of football.</p>
+          </div>
+          </article>
 
         <article class="trip-card">
           <img src="assets/images/trips/liverpool.jpg" alt="Liverpool legends tour at Anfield" />
-          <h3><a href="trips/liverpool-legends.html">Liverpool Legends Tour</a></h3>
-          <p>Walk through the Shankly Gates and into history.</p>
+          <div class="trip-overlay">
+            <h3><a href="trips/liverpool-legends.html" aria-label="Read more about Liverpool Legends Tour">Liverpool Legends Tour</a></h3>
+            <p>Relive Anfield’s legacy through the Shankly Gates.</p>
+          </div>
         </article>
 
         <article class="trip-card">
           <img src="assets/images/trips/rome.jpg" alt="Rome derby experience at Stadio Olimpico" />
-          <h3><a href="trips/rome-derby.html">Rome Derby</a></h3>
-          <p>Experience the passion of Lazio vs Roma under the lights.</p>
+          <div class="trip-overlay">
+            <h3><a href="trips/rome-derby.html" aria-label="Read more about Rome Derby">Rome Derby</a></h3>
+            <p>Witness Lazio vs Roma ignite the Eternal City.</p>
+          </div>
         </article>
 
         <article class="trip-card">
-          <img src="assets/images/trips/madrid.jpg" alt="Madrid El Clásico weekend" />
-          <h3><a href="trips/madrid-clasico.html">Madrid El Clásico</a></h3>
-          <p>Witness Real vs Barça in Spain’s fiercest football rivalry.</p>
+          <img src="assets/images/trips/real-madrid.jpg" alt="Madrid El Clásico weekend" />
+          <div class="trip-overlay">
+            <h3><a href="trips/madrid-clasico.html" aria-label="Read more about Madrid El Clásico">Madrid El Clásico</a></h3>
+            <p>El Clásico intensity at the Santiago Bernabéu.</p>
+          </div>
         </article>
 
         <article class="trip-card">
-          <img src="assets/images/trips/munich.jpg" alt="Munich Bundesliga experience" />
-          <h3><a href="trips/munich-weekend.html">Munich Weekend</a></h3>
-          <p>Beer halls, Bavarian charm, and Bayern Munich at the Allianz Arena.</p>
+          <img src="assets/images/trips/bayern.jpg" alt="Munich Bundesliga experience" />
+          <div class="trip-overlay">
+            <h3><a href="trips/munich-weekend.html" aria-label="Read more about Munich Weekend">Munich Weekend</a></h3>
+            <p>Bavarian charm meets Bundesliga brilliance at Allianz Arena.</p>
+          </div>
         </article>
 
         <article class="trip-card">
           <img src="assets/images/trips/paris.jpg" alt="Paris PSG matchday escape" />
-          <h3><a href="trips/paris-psg.html">Paris Matchday</a></h3>
-          <p>Style, speed, and star power at Parc des Princes.</p>
+          <div class="trip-overlay">
+            <h3><a href="trips/paris-psg.html" aria-label="Read more about Paris Matchday">Paris Matchday</a></h3>
+            <p>Style, speed, and Mbappé magic at Parc des Princes.</p>
+          </div>
+        </article>
+        
+        <article class="trip-card">
+          <img src="assets/images/trips/ajax.jpg" alt="Ajax Amsterdam at Johan Cruijff ArenA" />
+          <div class="trip-overlay">
+            <h3><a href="trips/ajax-weekend.html">Ajax Amsterdam</a></h3>
+            <p>Total football, red-and-white legacy, and echoes of Cruyff. A weekend in Amsterdam means history, style, and a seat at the Johan Cruijff ArenA.</p>
+          </div>
+        </article>
+
+        <article class="trip-card">
+            <img src="assets/images/trips/napoli.jpg" alt="Napoli Weekend by the Bay of Naples" />
+            <div class="trip-overlay">
+                <h3><a href="trips/napoli-weekend.html">Napoli Weekend</a></h3>
+                <p>Espresso, alleyway chants, and coastal drama.</p>
+            </div>
+        </article>
+        <article class="trip-card">
+          <img src="assets/images/trips/glasgow.jpg" alt="Glasgow football culture at Celtic Park and Ibrox Stadium" />
+          <div class="trip-overlay">
+            <h3><a href="trips/glasgow-football.html" aria-label="Explore Glasgow's football culture at Celtic Park and Ibrox Stadium">Glasgow Football Weekend</a></h3>
+            <p>From the thunder of the Old Firm derby to grassroots grit in the East End, Glasgow lives and breathes football. Celtic Park and Ibrox aren’t just stadiums—they’re battlegrounds of pride and history.</p>
+          </div>
+        </article>
+
+        <article class="trip-card">
+          <img src="assets/images/trips/ajax.jpg" alt="Ajax Amsterdam at Johan Cruijff ArenA" />
+          <div class="trip-overlay">
+            <h3><a href="trips/ajax-weekend.html">Amsterdam Weekend</a></h3>
+            <p>Total football, red-and-white legacy, and echoes of Cruyff. A weekend in Amsterdam means history, style, and a seat at the Johan Cruijff ArenA.</p>
+          </div>
         </article>
 
       </div>
@@ -96,6 +139,15 @@
   <footer role="contentinfo">
     <p>&copy; 2025 <strong>SportsVoyager</strong>. Built for fans, by fans.</p>
   </footer>
+
+  <!-- ===============================
+       SCRIPTS
+  ================================== -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
 
 </body>
 </html>

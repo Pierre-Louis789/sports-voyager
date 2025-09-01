@@ -1,0 +1,70 @@
+/* ============================================
+   INFO CARD COMPONENT 
+============================================ */
+.info-card {
+  background: linear-gradient(145deg, #fdfdfd, #f4f4f4);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-left: 4px solid var(--accent);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.info-overlay {
+  z-index: 2;
+}
+
+.info-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.info-card p {
+  font-family: 'Merriweather', serif;
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-main);
+  margin-bottom: 0;
+}
+
+body.loaded .info-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  background: url('../img/icon-info.svg') no-repeat center;
+  background-color: var(--accent);
+  mask: url('../img/icon-info.svg') no-repeat center;
+  mask-size: contain;
+  background-size: contain;
+  opacity: 0.05;
+  z-index: 1;
+  pointer-events: none;
+}
