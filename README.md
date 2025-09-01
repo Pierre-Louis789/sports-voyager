@@ -23,7 +23,11 @@ sports-voyager/
 
 ├── info.html               # Unified About + Contact page
 
+<<<<<<< HEAD
 ├── trips.html              # Modular layout for Destinations
+=======
+├── trips.html              # Modular layout for featured cities
+>>>>>>> 07a8287ac09daf52fa7681141e664c1446ef22fc
 
 ├── rome-derby.html         # Trip detail page: Rome Derby
 
