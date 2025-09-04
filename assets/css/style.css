@@ -7,30 +7,37 @@
    0. Root Variables
 ================================ */
 :root {
-  --blue-navy: #0a2540;
-  --gold-mustard: #f4c430;
-  --burgundy-soft: #7c3f58;
-  --gray-muted: #b8b8b8;
+  /* Core Brand Tones */
+  --sandstone-warm: #f4e9dc;        /* Editorial parchment */
+  --stadium-blue: #1e3a5f;          /* Deep navy for trust */
+  --terracotta-bold: #d16d4a;       /* Energetic matchday warmth */
+  --gray-muted: #a9a9a9;
 
-  --text-main: #eae6e1;
+  /* Text & Backgrounds */
+  --text-main: #faedd4;             /* Rich graphite */
   --text-muted: var(--gray-muted);
-  --text-dark: #2c2c2c;
-  --text-light: #fefefe;
+  --text-light: #ffffff;
+  --text-dark: #1a1a1a;
 
-  --bg-dark: #0a2540;
-  --bg-light: #fdf6e3;
-  --bg-panel: var(--burgundy-soft);
+  --bg-light: #fffdf9;              /* Soft ivory */
+  --bg-neutral: var(--sandstone-warm);
+  --bg-panel: var(--stadium-blue);
+  --bg-dark: #1e3a5f;
 
-  --accent: var(--gold-mustard);
-  --accent-hover: #e0b000;
+  /* Accent & CTA */
+  --accent: var(--terracotta-bold);
+  --accent-hover: #c85c3a;
 
-  --card-bg: #fdf6e3;
-  --card-shadow: rgba(0, 0, 0, 0.1);
-  --gradient-panel: linear-gradient(135deg, #7c3f58 0%, #f4c430 100%);
+  /* Cards & Shadows */
+  --card-bg: var(--bg-neutral);
+  --card-shadow: rgba(0, 0, 0, 0.08);
+  --gradient-panel: linear-gradient(135deg, #d16d4a 0%, #f4e9dc 100%);
 
-  --font-main: 'Merriweather', serif;
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
   --font-heading: 'Playfair Display', serif;
 }
+
 
 /* ================================
    1. Reset & Base
@@ -131,96 +138,6 @@ button:hover, .btn:hover {
   color: var(--text-light);
 }
 
-/* ================================
-   4. Hero Section
-================================ */
-.hero {
-  background: linear-gradient(
-      rgba(124, 63, 88, 0.6),
-      rgba(10, 37, 64, 0.8)
-    ),
-    url('../images/hero-bg.jpg') no-repeat center center;
-  background-size: cover;
-  height: 30vh;
-  background-attachment: scroll;
-  padding: 4rem 2rem;
-  text-align: center;
-  color: var(--text-light);
-  min-height: 60vh;
-  border-top: none;
-  position: relative;
-  opacity: 0;
-  transform: translate(Y(20px));
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.hero-content {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem;
-  position: relative;
-  z-index: 2;
-
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.hero-btn {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.85rem 2rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--bg-dark);
-  background-color: var(--accent);
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero-btn:hover {
-  background-color: var(--accent-hover);
-  transform: translateY(-2px);
-}
-.btn-primary {
-  display: inline-block;
-  background-color: var(--accent);
-  color: var(--bg-dark);
-  padding: 0.85rem 2rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: var(--accent-hover);
-  transform: translateY(-2px);
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30vh;
-  background: linear-gradient(to top, rgba(10, 37, 64, 0.6), rgba(253, 246, 227, 0));
-  z-index: 1;
-}
-
-
 
 /* ================================
    Heading Utilities
@@ -242,6 +159,7 @@ button:hover, .btn:hover {
   background-color: var(--accent);
   opacity: 0.6;
 }
+
 
 /* ================================
    Featured Preview Heading
@@ -266,6 +184,264 @@ body.loaded .featured-preview h2 {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+/* ================================
+   Featured Destination Layout INDEX
+================================ */
+.featured-destination {
+  background: var(--bg-light);
+  padding: 4rem 2rem;
+}
+
+.destination-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.destination-highlight figure {
+  flex: 1 1 40%;
+  margin: 0;
+}
+
+.destination-highlight img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.destination-highlight img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-text {
+  flex: 1 1 50%;
+  padding: 1rem;
+}
+.highlight-text h3 {
+  font-size: 1.6rem;
+  font-family: var(--font-heading);
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-main);
+}
+
+/* ================================
+   Fan Quote Block
+================================ */
+.fan-quote {
+  background: linear-gradient(135deg, var(--burgundy-soft), var(--gold-mustard));
+  color: var(--text-dark);
+  padding: 3rem 2rem;
+  text-align: center;
+  font-style: italic;
+  border-radius: 12px;
+  margin: 4rem auto;
+  max-width: 800px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quote-author {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ================================
+   Editorial Story Block
+================================ */
+.editorial-story {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(254, 255, 193, 0.85)), 
+    url('../images/dortmund-1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--card-bg); /* fallback */
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.editorial-story:nth-of-type(even) {
+  background-color: var(--bg-light);
+}
+
+.editorial-story:nth-of-type(odd) {
+  background-color: var(--card-bg);
+}
+
+.story-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.story-wrapper.reverse {
+  flex-direction: row-reverse;
+}
+
+.story-image {
+  flex: 1 1 40%;
+  height: 280px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px var(--card-shadow);
+  transition: transform 0.4s ease;
+  background-color: var(--bg-dark);
+}
+
+.story-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.story-content {
+  flex: 1 1 55%;
+  font-family: var(--font-main);
+}
+
+.story-content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--accent-hover);
+  margin-bottom: 0.5rem;
+}
+
+.story-content h3 {
+  font-size: 1.3rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.story-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.story-content .btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.story-content .btn-secondary:hover {
+  background-color: var(--accent);
+  color: var(--text-light);
+}
+/* ================================
+   CTA Bar with Icons
+================================ */
+.cta-bar-alt {
+  background-color: var(--bg-panel);
+  color: var(--text-light);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+
+.cta-options {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.cta-options li a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cta-options li a:hover {
+  color: var(--accent-hover);
+}
+
+/* ================================
+   Fixtures Preview Section
+================================ */
+
+.fixtures-preview {
+  padding: 4rem 2rem;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.fixtures-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.fixture-card {
+  background: var(--bg-card);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease;
+}
+
+.fixture-card:hover {
+  transform: translateY(-4px);
+}
+
+.fixture-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.fixture-card p {
+  font-family: 'Merriweather', serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 
 /* ================================
    5. Navigation
@@ -596,6 +772,16 @@ footer {
   .info-card {
     padding: 1.5rem;
   }
+
+  .destination-highlight {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-text {
+    padding: 0;
+  }
+
 
 }
 

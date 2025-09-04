@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SportsVoyager curates unforgettable football weekends across Europe’s most iconic Destination." />
+  <title>Home – SportsVoyager</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+
+  <!-- Inter (body text) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bodoni Moda (headings) -->
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- ===============================
+       HEADER & NAVIGATION
+  ================================== -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">SPORTS<span class="logo-highlight">VOYAGER</span></h1>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation" aria-expanded="">
+        <span></span><span></span><span></span>
+      </label>
+
+      <div class="nav-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Destinations</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===============================
+       HERO SECTION
+  ================================== -->
+  <section class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Curated Football Weekends</h1>
+      <p>From derby days to stadium tours — discover your next matchday escape across Europe.</p>
+      <a href="trips.html" class="btn-primary">Explore Destinations</a>
+    </div>
+  </section>
+
+  <!-- ===============================
+       MAIN CONTENT
+  ================================== -->
+  <main>
+
+    <!-- CONTACT FORM -->
+    <section class="featured-trips gradient-panel">
+      <h2 class="heading-centered">Get in Touch</h2>
+      <form class="contact-form" action="#" method="post" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream sports trip..." required></textarea>
+
+        <button type="submit">Send Message</button>
+        <div id="form-message" style="display:none; color: var(--yellow); font-weight: bold; margin-top: 1rem;">
+          ✅ Message sent! We'll get back to you soon.
+        </div>
+      </form>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <h2 id="cta-heading" class="heading-centered">Ready to Explore?</h2>
+      <ul class="cta-options">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">📍 How It Works</a></li>
+        <li><a href="trips.html">🧳 Browse Destinations</a></li>
+        <li><a href="contact.html">✉️ Contact Us</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ===============================
+       FOOTER
+  ================================== -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 <strong>SportsVoyager</strong> — Designed for fans, built for impact.</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('form-message').style.display = 'block';
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
