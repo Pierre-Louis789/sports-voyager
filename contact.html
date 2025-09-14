@@ -5,8 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="SportsVoyager curates unforgettable football weekends across Europe’s most iconic Destination." />
   <title>Home – SportsVoyager</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/typography.css" />
+  <link rel="stylesheet" href="assets/css/buttons.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/featured.css" />
+  <link rel="stylesheet" href="assets/css/navigation.css" />
 
   <!-- Inter (body text) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -81,26 +91,40 @@
         </div>
       </form>
     </section>
+    <!-- CALL TO ACTION BAR -->
 
-    <!-- CALL TO ACTION -->
-    <section class="cta-section" aria-labelledby="cta-heading">
-      <h2 id="cta-heading" class="heading-centered">Ready to Explore?</h2>
-      <ul class="cta-options">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="info.html">📍 How It Works</a></li>
-        <li><a href="trips.html">🧳 Browse Destinations</a></li>
-        <li><a href="contact.html">✉️ Contact Us</a></li>
-      </ul>
-    </section>
+   <section class="cta-bar-alt" aria-labelledby="cta-heading">
+  <h2 id="cta-heading" class="heading-centered">Your Next Matchday Escape Awaits</h2>
+  <p class="cta-subtext">From derby drama to stadium serenity, SportsVoyager curates unforgettable weekends for true fans.</p>
+  <div class="cta-buttons">
+    <a href="trips.html" class="btn-secondary">🧳 Browse Destinations</a>
+    <a href="info.html" class="btn-secondary">📍 How It Works</a>
+    <a href="contact.html" class="btn-secondary">✉️ Contact Us</a>
+  </div>
+</section>
 
   </main>
 
   <!-- ===============================
        FOOTER
   ================================== -->
-  <footer role="contentinfo">
+  <footer role="contentinfo" class="site-footer">
+  <div class="footer-content">
     <p>&copy; 2025 <strong>SportsVoyager</strong> — Designed for fans, built for impact.</p>
-  </footer>
+    </ul>
+    <ul class="social-links" aria-label="Social media">
+      <li><a href="https://twitter.com/SportsVoyager" target="_blank" rel="noopener" aria-label="Twitter">
+        <img src="assets/icons/twitter.svg" alt="Twitter" />
+      </a></li>
+      <li><a href="https://instagram.com/SportsVoyager" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="assets/icons/instagram.svg" alt="Instagram" />
+      </a></li>
+      <li><a href="https://facebook.com/SportsVoyager" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="assets/icons/facebook.svg" alt="Facebook" />
+      </a></li>
+    </ul>
+  </div>
+</footer>
 
   <!-- SCRIPTS -->
   <script>
