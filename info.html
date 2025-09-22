@@ -20,14 +20,20 @@
 
   <!-- Font Awesome for Icons -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   
-  <!-- Inter (body text) -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-<!-- Bodoni Moda (headings) -->
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
+  <!-- Load Animation -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</head>
 
+<body>
   <!-- ===============================
        NAVIGATION
   ================================== -->
@@ -44,7 +50,7 @@
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="trips.html">Destinations</a></li>
-          <li><a href="info.html" class="active">Info</a></li>
+          <li><a href="info.html" class="active" aria-current="page">Info</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>

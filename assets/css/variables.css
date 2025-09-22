@@ -6,8 +6,8 @@
 :root {
   /* Core Brand Tones */
   --sandstone-warm: #f4e9dc;
-  --stadium-blue: #1e3a5f;
-  --terracotta-bold: #d16d4a;
+  --stadium-blue: #1e3a5f; /* Primary brand blue */
+  --terracotta-bold: #d16d4a; /* Accent color */
   --gray-muted: #a9a9a9;
 
   /* Text & Backgrounds */
@@ -30,6 +30,7 @@
   --gradient-panel: linear-gradient(135deg, #d16d4a 0%, #f4e9dc 100%);
 
   /* Typography */
-  --font-main: 'Inter', sans-serif;
-  --font-heading: 'Playfair Display', serif;
+  --font-main: 'Lato', sans-serif;
+  --font-heading: 'PLayfair Display', serif;
+
 }

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SportsVoyager curates unforgettable football weekends across Europe’s most iconic Destination." />
-  <title>Destination – SportsVoyager</title>
-  
+  <meta name="description" content="SportsVoyager curates unforgettable football weekends across Europe’s most iconic destinations." />
+  <title>Destinations – SportsVoyager</title>
+
   <!-- Modular Stylesheets -->
   <link rel="stylesheet" href="assets/css/variables.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
@@ -19,14 +19,21 @@
   <link rel="stylesheet" href="assets/css/navigation.css" />
 
   <!-- Font Awesome for Icons -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Inter (body text) -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- Bodoni Moda (headings) -->
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
+  <!-- Load Animation -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</head>
+
+<body>
 
   <!-- ===============================
        HEADER & NAVIGATION
@@ -43,7 +50,7 @@
       <div class="nav-wrapper">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="trips.html" class="active">Destinations</a></li>
+          <li><a href="trips.html" class="active" aria-current="page">Destinations</a></li>
           <li><a href="info.html">Info</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -54,7 +61,7 @@
   <!-- ===============================
        PAGE INTRO
   ================================== -->
-  <section class="hero" role="banner">
+  <section class="hero" role="banner" aria-label="Football weekends across Europe">
     <div class="hero-content">
       <h1>Football Weekends Across Europe</h1>
       <p>From derby days to historic stadium tours — find your next matchday escape.</p>
@@ -66,109 +73,119 @@
     <!-- ===============================
          FEATURED TRIPS
     ================================== -->
-
     <section class="featured-trips" aria-labelledby="destinations-heading" role="region">
       <h2 id="destinations-heading" class="heading-centered">All Destinations</h2>
       <div class="trip-grid">
 
+        <!-- Trip Cards -->
         <article class="trip-card">
           <img src="assets/images/trips/real-madrid.jpg" alt="Madrid El Clásico weekend" />
           <div class="trip-overlay">
-            <h3><a href="trips/madrid-clasico.html" aria-label="Read more about Madrid El Clásico">Madrid El Clásico</a></h3>
+            <h3><a href="trips/madrid-clasico.html">Madrid El Clásico</a></h3>
             <p>El Clásico intensity at the Santiago Bernabéu.</p>
+            <a href="clasico-matchday.html" class="cta-button">Explore Madrid</a>
           </div>
         </article>
 
         <article class="trip-card">
-          <img src="assets/images/trips/Dortmund.jpg" alt="Dortmund Bundesliga experience at Signal Iduna Park" />
+          <img src="assets/images/trips/dortmund.jpg" alt="Dortmund Bundesliga experience at Signal Iduna Park" />
           <div class="trip-overlay">
-            <h3><a href="trips/dortmund-weekend.html" aria-label="Read more about Dortmund Weekend">Dortmund Weekend</a></h3>
+            <h3><a href="trips/dortmund-weekend.html">Dortmund Weekend</a></h3>
             <p>Stand beneath the Yellow Wall, 80,000 voices rise in unison. Signal Iduna Park isn’t just a stadium.</p>
+          <a href="trips/dortmund-weekend.html" class="cta-button">Explore Dortmund</a>
           </div>
-          </article>
+        </article>
 
         <article class="trip-card">
           <img src="assets/images/trips/liverpool.jpg" alt="Liverpool legends tour at Anfield" />
           <div class="trip-overlay">
-            <h3><a href="trips/liverpool-legends.html" aria-label="Read more about Liverpool Legends Tour">Liverpool Legends Tour</a></h3>
+            <h3><a href="trips/liverpool-legends.html">Liverpool Legends Tour</a></h3>
             <p>Relive Anfield’s legacy through the Shankly Gates.</p>
-          </div>
-        </article>
-        <article class="trip-card">
-          <img src="assets/images/trips/rome.jpg" alt="Rome derby experience at Stadio Olimpico" />
-          <div class="trip-overlay">
-            <h3><a href="trips/rome-derby.html" aria-label="Read more about Rome Derby">Rome Derby</a></h3>
-            <p>Witness Lazio vs Roma ignite the Eternal City.</p>
+            <a href="#Liverpool" class="cta-button">Explore Liverpool</a>
           </div>
         </article>
 
         <article class="trip-card">
-          <img src="assets/images/trips/bayern.jpg" alt="Munich Bundesliga experience" />
+          <img src="assets/images/trips/rome.jpg" alt="Rome derby experience at Stadio Olimpico" />
           <div class="trip-overlay">
-            <h3><a href="trips/munich-weekend.html" aria-label="Read more about Munich Weekend">Munich Weekend</a></h3>
+            <h3><a href="trips/rome-derby.html">Rome Derby</a></h3>
+            <p>Witness Lazio vs Roma ignite the Eternal City.</p>
+            <a href="#Rome" class="cta-button">Explore Rome</a>
+          </div>
+        </article>
+
+        <article class="trip-card">
+          <img src="assets/images/trips/bayern-munich.jpg" alt="Munich Bundesliga experience" />
+          <div class="trip-overlay">
+            <h3><a href="trips/munich-weekend.html">Munich Weekend</a></h3>
             <p>Bavarian charm meets Bundesliga brilliance at Allianz Arena.</p>
+            <a href="#Munich" class="cta-button">Explore Munich</a>
           </div>
         </article>
 
         <article class="trip-card">
           <img src="assets/images/trips/paris.jpg" alt="Paris PSG matchday escape" />
           <div class="trip-overlay">
-            <h3><a href="trips/paris-psg.html" aria-label="Read more about Paris Matchday">Paris Matchday</a></h3>
-            <p>Style, speed, and Mbappé magic at Parc des Princes.</p>
+            <h3><a href="trips/paris-psg.html">Paris Matchday</a></h3>
+            <p>Style, speed, and Paris magic at Parc des Princes.</p>
+            <a href="#Paris" class="cta-button">Explore Paris</a>
           </div>
         </article>
 
         <article class="trip-card">
-            <img src="assets/images/trips/napoli.jpg" alt="Napoli Weekend by the Bay of Naples" />
-            <div class="trip-overlay">
-                <h3><a href="trips/napoli-weekend.html">Napoli Weekend</a></h3>
-                <p>Espresso, alleyway chants, and coastal drama.</p>
-            </div>
+          <img src="assets/images/trips/napoli.jpg" alt="Napoli Weekend by the Bay of Naples" />
+          <div class="trip-overlay">
+            <h3><a href="trips/napoli-weekend.html">Napoli Weekend</a></h3>
+            <p>Espresso, alleyway chants, and coastal drama.</p>
+            <a href="#Napoli" class="cta-button">Explore Napoli</a>
+          </div>
         </article>
-        
+
         <article class="trip-card">
           <img src="assets/images/trips/ajax.jpg" alt="Ajax Amsterdam at Johan Cruijff ArenA" />
           <div class="trip-overlay">
             <h3><a href="trips/ajax-weekend.html">Ajax Amsterdam</a></h3>
-            <p>Total football, red-and-white legacy, and echoes of Cruyff. A weekend in Amsterdam means history, style, and a seat at the Johan Cruijff ArenA.</p>
+            <p>Total football, red-and-white legacy, and echoes of Cruyff. A weekend in Amsterdam means history, style, and a seat at the Johan Cruijff Arena.</p>
+            <a href="#Amsterdam" class="cta-button">Explore Amsterdam</a>
           </div>
         </article>
 
         <article class="trip-card">
           <img src="assets/images/trips/glasgow.jpg" alt="Glasgow football culture at Celtic Park and Ibrox Stadium" />
           <div class="trip-overlay">
-            <h3><a href="trips/glasgow-football.html" aria-label="Explore Glasgow's football culture at Celtic Park and Ibrox Stadium">Glasgow Football Weekend</a></h3>
-            <p>From the thunder of the Old Firm derby to grassroots grit in the East End, Glasgow lives and breathes football. Celtic Park and Ibrox aren’t just stadiums—they’re battlegrounds of pride and history.</p>
+            <h3><a href="trips/glasgow-football.html">Glasgow Football Weekend</a></h3>
+            <p>From the thunder of the Old Firm derby to grassroots grit in the East End, Glasgow lives and breathes football.</p>
+            <a href="#Glasgow" class="cta-button">Explore Glasgow</a>
           </div>
         </article>
 
         <article class="trip-card">
           <img src="assets/images/trips/manchester-city.jpg" alt="Manchester City Etihad Stadium tour and matchday experience" />
           <div class="trip-overlay">
-            <h3><a href="trips/manchester-city.html" aria-label="Read more about Manchester City Experience">Manchester City Experience</a></h3>
+            <h3><a href="trips/manchester-city.html">Manchester City Experience</a></h3>
             <p>Sky Blue spectacle at the Etihad Stadium.</p>
+            <a href="#Manchester" class="cta-button">Explore Manchester</a>
           </div>
         </article>
 
-
       </div>
     </section>
+
+    <!-- ===============================
+         CTA BAR WITH ICONS
+    ================================== -->
+    <section class="cta-bar-alt" aria-labelledby="cta-heading">
+      <h2 id="cta-heading" class="heading-centered">Your Next Matchday Escape Awaits</h2>
+      <p class="cta-subtext">From derby drama to stadium serenity, SportsVoyager curates unforgettable weekends for true fans.</p>
+      <div class="cta-buttons">
+        <a href="trips.html" class="btn-secondary">🧳 Browse Destinations</a>
+        <a href="info.html" class="btn-secondary">📍 How It Works</a>
+        <a href="contact.html" class="btn-secondary">✉️ Contact Us</a>
+      </div>
+    </section>
+
   </main>
 
-  <!-- ===============================
-     CTA BAR WITH ICONS
-================================== -->
-
-   <section class="cta-bar-alt" aria-labelledby="cta-heading">
-  <h2 id="cta-heading" class="heading-centered">Your Next Matchday Escape Awaits</h2>
-  <p class="cta-subtext">From derby drama to stadium serenity, SportsVoyager curates unforgettable weekends for true fans.</p>
-  <div class="cta-buttons">
-    <a href="trips.html" class="btn-secondary">🧳 Browse Destinations</a>
-    <a href="info.html" class="btn-secondary">📍 How It Works</a>
-    <a href="contact.html" class="btn-secondary">✉️ Contact Us</a>
-  </div>
-</section>
-  
   <!-- ===============================
        FOOTER
   ================================== -->
@@ -188,15 +205,6 @@
 </ul>
     </div>
   </footer>
-
-  <!-- ===============================
-       SCRIPTS
-  ================================== -->
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      document.body.classList.add('loaded');
-    });
-  </script>
 
 </body>
 </html>
