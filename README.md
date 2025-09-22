@@ -82,6 +82,11 @@ Testimonials: Real-person video paired with quotes build trust and emotional res
 
 All images were curated to support editorial storytelling and visual rhythm.
 
+Nedd to source all the images :
+-
+-
+-
+
 🧮 Wireframes
 
 Wireframes were created to guide layout decisions and ensure responsive clarity they all follow the same pattern of design:
@@ -176,9 +181,9 @@ Each HTML file uses semantic tags (`<header>`, `<main>`, `<section>`, `<article>
 | iPad          | ✅     | ✅     | ✅      | ✅   |
 
 ### ✅ Audit Scores (Chrome DevTools)
-- Performance: 93  
-- Accessibility: 100  
-- Best Practices: 92
+- Performance:   
+- Accessibility:  
+- Best Practices: 
 
 ---
 
@@ -186,6 +191,7 @@ Each HTML file uses semantic tags (`<header>`, `<main>`, `<section>`, `<article>
 
 - Hero image may overflow on some mobile screens  
 - Footer text alignment varies across devices
+- Buttons for trips might not have accesibility
 
 ---
 
